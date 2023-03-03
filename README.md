@@ -1,7 +1,7 @@
 # Flask-Portfolio-Webapp-with-Blueprint
 This is a simple flask web app made with blue prints
 
-this is a flask portfolio web app with blueprints
+live preview link: https://www.ericekweyunga.pythonanywhere.com
 
 install the requirements.txt
 
