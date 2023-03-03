@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- css -->
-    <link rel="stylesheet" href="{{ url_for('public.static', filename='css/style.css') }}">
-
-    <title>{% block title %} {% endblock %}</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Web Developer">
+    <meta name="author" content="Eric Kweyunga">
+    <title> EricKweyunga | Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{{ url_for('public.static', filename='vendors/themify-icons/css/themify-icons.css') }}">
+    <!-- Bootstrap + main styles -->
+	<link rel="stylesheet" href="{{ url_for('public.static', filename='css/app.css') }}">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
     {% block content %}
 
     {% endblock %}
+
+    <!-- core  -->
+    <script src="{{ url_for('public.static', filename='vendors/jquery/jquery-3.4.1.js') }}"></script>
+    <script src="{{ url_for('public.static', filename='vendors/bootstrap/bootstrap.bundle.js') }}"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="{{ url_for('public.static', filename='vendors/bootstrap/bootstrap.affix.js') }}"></script>
+
+    <!-- Meyawo js -->
+    <script src="{{ url_for('public.static', filename='js/app.js') }}"></script>
 </body>
 </html>
